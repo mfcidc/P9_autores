@@ -33,9 +33,12 @@ public class BenevoleInterface extends JFrame {
         proposePanel.add(messageTextArea);
 
 // Nuevas cajas obligatorias para fecha, región y descripción
-        JTextField dateField = new JTextField();
-        JTextField regionField = new JTextField();
-        JTextField descriptionField = new JTextField();
+JTextField dateField = new JTextField();
+        dateField.setBorder(BorderFactory.createTitledBorder("date"));
+JTextField regionField = new JTextField();
+        regionField.setBorder(BorderFactory.createTitledBorder("region"));
+JTextField descriptionField = new JTextField();
+        descriptionField.setBorder(BorderFactory.createTitledBorder("description"));
 
         proposePanel.add(dateField);
         proposePanel.add(regionField);
@@ -95,4 +98,6 @@ public class BenevoleInterface extends JFrame {
             }
         });
     }
+
 }
+
